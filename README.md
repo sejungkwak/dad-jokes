@@ -21,3 +21,28 @@
 * Challenge from Brad Traversy & Florin Pop on Udemy '50 Projects in 50 Days'
 
 #### Takeaways from the instructor
+
+1. HTML
+
+- div for joke
+
+2. CSS
+
+- 2 box-shadow
+
+3. JavaScript
+
+- alternative method
+
+```
+async function generateJoke() {
+  const config = {
+    headers: {
+      Accept: 'application/json'
+    }
+  }
+  const res = await fetch(url, config)
+  const data = await res.json()
+  jokeEl.innerHTML = data.joke
+}
+```
